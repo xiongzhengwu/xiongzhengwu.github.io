@@ -169,6 +169,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python_basics4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/25/Python_basics4/">python中闭包函数的应用</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/25/Python_basics4/" class="archive-article-date">
+  	<time datetime="2018-07-25T13:20:42.611Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="装饰器的应用场景"><a href="#装饰器的应用场景" class="headerlink" title="装饰器的应用场景"></a>装饰器的应用场景</h2><h3 id="日志的创建与写法"><a href="#日志的创建与写法" class="headerlink" title="日志的创建与写法"></a>日志的创建与写法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import logging</span><br><span class="line"></span><br><span class="line">#创建一个日志对象,并设置日志级别</span><br><span class="line">logger = logging.getLogger(&apos;pythonlogger&apos;)</span><br><span class="line">logger.setLevel(logging.INFO)</span><br><span class="line"></span><br><span class="line">#创建一个handler，用来将日志内容存入文件中</span><br><span class="line">file = logging.FileHandler(&apos;test.log&apos;)</span><br><span class="line">file.setLevel(logging.INFO)</span><br><span class="line"></span><br><span class="line">#创建一个handler，用来将日志输出到控制台</span><br><span class="line">console = logging.StreamHandler()</span><br><span class="line">console.setLevel(logging.INFO)</span><br><span class="line"></span><br><span class="line">#定义日志输出格式</span><br><span class="line">formatter = logging.Formatter(&apos;%(asctime)s - %(name)s - %(levelname)s - %(message)s&apos;)</span><br><span class="line">file.setFormatter(formatter)</span><br><span class="line">console.setFormatter(formatter)</span><br><span class="line"></span><br><span class="line">#将logger添加到handler</span><br><span class="line">logger.addHandler(file)</span><br><span class="line">logger.addHandler(console)</span><br><span class="line"></span><br><span class="line">logger.info(&apos;我是一条日志信息！&apos;)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/25/Python_basics4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python_basics3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
