@@ -169,6 +169,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python_basics9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/15/Python_basics9/">Python高级编程06（基础爬虫）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/15/Python_basics9/" class="archive-article-date">
+  	<time datetime="2018-08-15T00:37:17.230Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="网络原理"><a href="#网络原理" class="headerlink" title="网络原理"></a>网络原理</h2><h3 id="HTTP与HTTPS的区别"><a href="#HTTP与HTTPS的区别" class="headerlink" title="HTTP与HTTPS的区别"></a>HTTP与HTTPS的区别</h3><p>HTTP：我们称为超文本传输协议，主要用来实现从网络传输超文本到本地浏览器，实现高效且准确的超文本传送。目前HTTP的版本为1.1<br>HTTPS：我们认为就是以安全为目标的HTTP通道，即在HTTP协议的基础上加入了SSL层，简称HTTPS。<br>SSL的主要作用分为以下两部分：<br>第一、为HTTP传输文件提供安全的传输通道<br>第二、确认网站的真实性，通过HTTPS访问的网站都需要获取到CA认证。</p>
+<h3 id="网络七层模型（了解）"><a href="#网络七层模型（了解）" class="headerlink" title="网络七层模型（了解）"></a>网络七层模型（了解）</h3><p>从下到上的顺序<br>物理层<br>数据链路层<br>网络层<br>传输层（TCP、UDP）<br>会话层<br>表示层<br>应用层（HTTP FTP TFTP SMTP SNMP DNS TELNET HTTPS POP3 DHCP）</p>
+<h3 id="HTTP的请求机制"><a href="#HTTP的请求机制" class="headerlink" title="HTTP的请求机制"></a>HTTP的请求机制</h3><p>第一，由客户端（浏览器）发出请求<br>第二，通过网络传输，到指定的服务器地址<br>第三，服务器接收相关请求，并进行解析<br>第四，服务器将最终的结果响应回客户端<br>第五，客户端接收到服务器响应后，通过浏览器解析，最终将内容进行展现</p>
+<h3 id="客户端访问服务器，发出请求，有四部分构成"><a href="#客户端访问服务器，发出请求，有四部分构成" class="headerlink" title="客户端访问服务器，发出请求，有四部分构成"></a>客户端访问服务器，发出请求，有四部分构成</h3><p>第一，请求方法（request method），默认为get方式。只有在表单提交和文件上传时为post方法。<br>第二，请求网址（request url），即在浏览器中输入的网路地址。<br>第三，请求头（request header），用来标识为一个浏览器正常的访问<br>第四，请求体（request body），用来传输到服务器端的相关数据</p>
+<h3 id="请求方法中get与post的区别"><a href="#请求方法中get与post的区别" class="headerlink" title="请求方法中get与post的区别"></a>请求方法中get与post的区别</h3><p>第一、使用get方式提交请求时，相关数据会作为url的参数被一起进行提交，我们可以直接在地址栏中观察到相关数据。而采用post方式请求的url不会包含这些数据，而是直接通过表单提交到服务器。<br>第二、get方式提交请求，对于提交的数据大小不能大于1024字节，而post方式提交数据，没有大小的限制。<br>总之，如果提交的信息比较敏感或者字节较大时，需要使用post方式；如果只是普通的请求使用get方式。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/15/Python_basics9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python_basics8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -176,7 +243,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/08/Python_basics8/">Python基础05（面向对象）</a>
+      <a class="article-title" href="/2018/08/08/Python_basics8/">Python高级编程05（面向对象）</a>
     </h1>
   
 
@@ -408,6 +475,70 @@
 
 
   
+    <article id="post-Python_basics7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/01/Python_basics7/">将xml里的文件解析出来，并存放到Excel表格中</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/01/Python_basics7/" class="archive-article-date">
+  	<time datetime="2018-08-01T06:01:38.913Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="xml文件"><a href="#xml文件" class="headerlink" title="xml文件"></a>xml文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;ORDER&gt;</span><br><span class="line">        &lt;DTIME&gt;2005-1-3&lt;/DTIME&gt;</span><br><span class="line">        &lt;CUSTOMERADDR&gt;</span><br><span class="line">                &lt;COUNTRY&gt;US&lt;/COUNTRY&gt;</span><br><span class="line">                &lt;NAME&gt;Alice Smith&lt;/NAME&gt;</span><br><span class="line">                &lt;STREET&gt;123 Maple Street&lt;/STREET&gt;</span><br><span class="line">                &lt;CITY&gt;Mill Valley&lt;/CITY&gt;</span><br><span class="line">                &lt;PROVINCE&gt;CA&lt;/PROVINCE&gt;</span><br><span class="line">                &lt;ZIP&gt;90952&lt;/ZIP&gt;</span><br><span class="line">        &lt;/CUSTOMERADDR&gt;</span><br><span class="line">        &lt;MERCHANTADDR&gt;</span><br><span class="line">                &lt;COUNTRY&gt;US&lt;/COUNTRY&gt;</span><br><span class="line">                &lt;NAME&gt;Robert Smith&lt;/NAME&gt;</span><br><span class="line">                &lt;STREET&gt;8 Oak Avenue&lt;/STREET&gt;</span><br><span class="line">                &lt;CITY&gt;Old Town&lt;/CITY&gt;</span><br><span class="line">                &lt;PROVINCE&gt;PA&lt;/PROVINCE&gt;</span><br><span class="line">                &lt;ZIP&gt;95819&lt;/ZIP&gt;</span><br><span class="line">        &lt;/MERCHANTADDR&gt;</span><br><span class="line">        &lt;INSTRUCTION&gt;Hurry,my lawn is going wild!&lt;/INSTRUCTION&gt;</span><br><span class="line">        &lt;DETAIL&gt;</span><br><span class="line">                &lt;SN&gt;872-AA&lt;/SN&gt;</span><br><span class="line">                &lt;NAME&gt;Lawnmower&lt;/NAME&gt;</span><br><span class="line">                &lt;COUNT&gt;1&lt;/COUNT&gt;</span><br><span class="line">                &lt;PRICE&gt;148.95&lt;/PRICE&gt;</span><br><span class="line">                &lt;URGENT&gt;YES&lt;/URGENT&gt;</span><br><span class="line">                &lt;EXTRA&gt;Confirm this is electric&lt;/EXTRA&gt;</span><br><span class="line">        &lt;/DETAIL&gt;</span><br><span class="line">        &lt;DETAIL&gt;</span><br><span class="line">                &lt;SN&gt;926-AA&lt;/SN&gt;</span><br><span class="line">                &lt;NAME&gt;Baby Monitor&lt;/NAME&gt;</span><br><span class="line">                &lt;COUNT&gt;1&lt;/COUNT&gt;</span><br><span class="line">                &lt;PRICE&gt;39.98&lt;/PRICE&gt;</span><br><span class="line">                &lt;URGENT&gt;NO&lt;/URGENT&gt;</span><br><span class="line">                &lt;EXTRA/&gt;</span><br><span class="line">        &lt;/DETAIL&gt;</span><br><span class="line">&lt;/ORDER&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">from xml.etree import ElementTree as et</span><br><span class="line">import xlwt</span><br><span class="line">def readXML(xmlfile):</span><br><span class="line">    tree = et.parse(xmlfile)</span><br><span class="line">    root = tree.getroot()</span><br><span class="line">    order_time = &apos;&apos;</span><br><span class="line">    order_add = &#123;&#125;</span><br><span class="line">    order_list = []</span><br><span class="line">    if len(root) &gt; 0:</span><br><span class="line">        for child in root: # 将一级子节点内容取出</span><br><span class="line">            if child.tag == &apos;DTIME&apos;:</span><br><span class="line">                order_time = (child.text).strip()</span><br><span class="line">            elif child.tag ==&apos;CUSTOMERADDR&apos;: </span><br><span class="line">                customer = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    customer.append((node.tag,(node.text).strip()))</span><br><span class="line">                    order_add[&apos;CUSTOMERADDR&apos;] = customer</span><br><span class="line">            elif child.tag == &apos;MERCHANTADDR&apos;:</span><br><span class="line">                mercharnt = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    mercharnt.append((node.tag,(node.text).strip()))</span><br><span class="line">                    order_add[&apos;MERCHANTADDR&apos;] = mercharnt</span><br><span class="line">            elif child.tag == &apos;DETAIL&apos;:</span><br><span class="line">                detail = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    content = &apos;&apos;</span><br><span class="line">                    if node.text != None:</span><br><span class="line">                        content = node.text.strip()</span><br><span class="line">                    else:</span><br><span class="line">                        content = &apos;&apos;</span><br><span class="line">                    detail.append((node.tag, content))</span><br><span class="line">                order_list.append(detail)</span><br><span class="line">                order_add[order_time] = order_list</span><br><span class="line">    return order_add</span><br><span class="line">           </span><br><span class="line">def saveExcel(dic):</span><br><span class="line">    items = list(dic.keys())</span><br><span class="line">    </span><br><span class="line">    book = xlwt.Workbook()</span><br><span class="line">    customer_sheet = book.add_sheet(items[0])</span><br><span class="line">    mercharnt_sheet = book.add_sheet(items[1])</span><br><span class="line">    detail_sheet = book.add_sheet(items[2])</span><br><span class="line">    </span><br><span class="line">    customer_list = dic[items[0]]</span><br><span class="line">    for i in range(len(customer_list)):</span><br><span class="line">        customer_sheet.write(0,i,customer_list[i][0])</span><br><span class="line">        customer_sheet.write(1,i,customer_list[i][1])</span><br><span class="line"></span><br><span class="line">    mercharnt_list = dic[items[1]]</span><br><span class="line">    for i in range(len(mercharnt_list)):</span><br><span class="line">        mercharnt_sheet.write(0,i,mercharnt_list[i][0])</span><br><span class="line">        mercharnt_sheet.write(1,i,mercharnt_list[i][1])</span><br><span class="line"></span><br><span class="line">    detail_list = dic[items[2]]</span><br><span class="line">    for i in range(len(detail_list)):</span><br><span class="line">        for j in range(len(detail_list[i])):</span><br><span class="line">            if i == 0:</span><br><span class="line">                detail_sheet.write(0, j, detail_list[i][j][0])</span><br><span class="line">            detail_sheet.write(i+1, j, detail_list[i][j][1])</span><br><span class="line">    book.save(&apos;order.xls&apos;)</span><br><span class="line">       </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dic = readXML(&apos;order.xml&apos;)</span><br><span class="line">saveExcel(dic)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/01/Python_basics7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python_basics6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -446,70 +577,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/08/01/Python_basics6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python_basics7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/01/Python_basics7/">将xml里的文件解析出来，并存放到Excel表格中</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/01/Python_basics7/" class="archive-article-date">
-  	<time datetime="2018-08-01T06:01:38.913Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="xml文件"><a href="#xml文件" class="headerlink" title="xml文件"></a>xml文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;ORDER&gt;</span><br><span class="line">        &lt;DTIME&gt;2005-1-3&lt;/DTIME&gt;</span><br><span class="line">        &lt;CUSTOMERADDR&gt;</span><br><span class="line">                &lt;COUNTRY&gt;US&lt;/COUNTRY&gt;</span><br><span class="line">                &lt;NAME&gt;Alice Smith&lt;/NAME&gt;</span><br><span class="line">                &lt;STREET&gt;123 Maple Street&lt;/STREET&gt;</span><br><span class="line">                &lt;CITY&gt;Mill Valley&lt;/CITY&gt;</span><br><span class="line">                &lt;PROVINCE&gt;CA&lt;/PROVINCE&gt;</span><br><span class="line">                &lt;ZIP&gt;90952&lt;/ZIP&gt;</span><br><span class="line">        &lt;/CUSTOMERADDR&gt;</span><br><span class="line">        &lt;MERCHANTADDR&gt;</span><br><span class="line">                &lt;COUNTRY&gt;US&lt;/COUNTRY&gt;</span><br><span class="line">                &lt;NAME&gt;Robert Smith&lt;/NAME&gt;</span><br><span class="line">                &lt;STREET&gt;8 Oak Avenue&lt;/STREET&gt;</span><br><span class="line">                &lt;CITY&gt;Old Town&lt;/CITY&gt;</span><br><span class="line">                &lt;PROVINCE&gt;PA&lt;/PROVINCE&gt;</span><br><span class="line">                &lt;ZIP&gt;95819&lt;/ZIP&gt;</span><br><span class="line">        &lt;/MERCHANTADDR&gt;</span><br><span class="line">        &lt;INSTRUCTION&gt;Hurry,my lawn is going wild!&lt;/INSTRUCTION&gt;</span><br><span class="line">        &lt;DETAIL&gt;</span><br><span class="line">                &lt;SN&gt;872-AA&lt;/SN&gt;</span><br><span class="line">                &lt;NAME&gt;Lawnmower&lt;/NAME&gt;</span><br><span class="line">                &lt;COUNT&gt;1&lt;/COUNT&gt;</span><br><span class="line">                &lt;PRICE&gt;148.95&lt;/PRICE&gt;</span><br><span class="line">                &lt;URGENT&gt;YES&lt;/URGENT&gt;</span><br><span class="line">                &lt;EXTRA&gt;Confirm this is electric&lt;/EXTRA&gt;</span><br><span class="line">        &lt;/DETAIL&gt;</span><br><span class="line">        &lt;DETAIL&gt;</span><br><span class="line">                &lt;SN&gt;926-AA&lt;/SN&gt;</span><br><span class="line">                &lt;NAME&gt;Baby Monitor&lt;/NAME&gt;</span><br><span class="line">                &lt;COUNT&gt;1&lt;/COUNT&gt;</span><br><span class="line">                &lt;PRICE&gt;39.98&lt;/PRICE&gt;</span><br><span class="line">                &lt;URGENT&gt;NO&lt;/URGENT&gt;</span><br><span class="line">                &lt;EXTRA/&gt;</span><br><span class="line">        &lt;/DETAIL&gt;</span><br><span class="line">&lt;/ORDER&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">from xml.etree import ElementTree as et</span><br><span class="line">import xlwt</span><br><span class="line">def readXML(xmlfile):</span><br><span class="line">    tree = et.parse(xmlfile)</span><br><span class="line">    root = tree.getroot()</span><br><span class="line">    order_time = &apos;&apos;</span><br><span class="line">    order_add = &#123;&#125;</span><br><span class="line">    order_list = []</span><br><span class="line">    if len(root) &gt; 0:</span><br><span class="line">        for child in root: # 将一级子节点内容取出</span><br><span class="line">            if child.tag == &apos;DTIME&apos;:</span><br><span class="line">                order_time = (child.text).strip()</span><br><span class="line">            elif child.tag ==&apos;CUSTOMERADDR&apos;: </span><br><span class="line">                customer = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    customer.append((node.tag,(node.text).strip()))</span><br><span class="line">                    order_add[&apos;CUSTOMERADDR&apos;] = customer</span><br><span class="line">            elif child.tag == &apos;MERCHANTADDR&apos;:</span><br><span class="line">                mercharnt = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    mercharnt.append((node.tag,(node.text).strip()))</span><br><span class="line">                    order_add[&apos;MERCHANTADDR&apos;] = mercharnt</span><br><span class="line">            elif child.tag == &apos;DETAIL&apos;:</span><br><span class="line">                detail = []</span><br><span class="line">                for node in child:</span><br><span class="line">                    content = &apos;&apos;</span><br><span class="line">                    if node.text != None:</span><br><span class="line">                        content = node.text.strip()</span><br><span class="line">                    else:</span><br><span class="line">                        content = &apos;&apos;</span><br><span class="line">                    detail.append((node.tag, content))</span><br><span class="line">                order_list.append(detail)</span><br><span class="line">                order_add[order_time] = order_list</span><br><span class="line">    return order_add</span><br><span class="line">           </span><br><span class="line">def saveExcel(dic):</span><br><span class="line">    items = list(dic.keys())</span><br><span class="line">    </span><br><span class="line">    book = xlwt.Workbook()</span><br><span class="line">    customer_sheet = book.add_sheet(items[0])</span><br><span class="line">    mercharnt_sheet = book.add_sheet(items[1])</span><br><span class="line">    detail_sheet = book.add_sheet(items[2])</span><br><span class="line">    </span><br><span class="line">    customer_list = dic[items[0]]</span><br><span class="line">    for i in range(len(customer_list)):</span><br><span class="line">        customer_sheet.write(0,i,customer_list[i][0])</span><br><span class="line">        customer_sheet.write(1,i,customer_list[i][1])</span><br><span class="line"></span><br><span class="line">    mercharnt_list = dic[items[1]]</span><br><span class="line">    for i in range(len(mercharnt_list)):</span><br><span class="line">        mercharnt_sheet.write(0,i,mercharnt_list[i][0])</span><br><span class="line">        mercharnt_sheet.write(1,i,mercharnt_list[i][1])</span><br><span class="line"></span><br><span class="line">    detail_list = dic[items[2]]</span><br><span class="line">    for i in range(len(detail_list)):</span><br><span class="line">        for j in range(len(detail_list[i])):</span><br><span class="line">            if i == 0:</span><br><span class="line">                detail_sheet.write(0, j, detail_list[i][j][0])</span><br><span class="line">            detail_sheet.write(i+1, j, detail_list[i][j][1])</span><br><span class="line">    book.save(&apos;order.xls&apos;)</span><br><span class="line">       </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dic = readXML(&apos;order.xml&apos;)</span><br><span class="line">saveExcel(dic)</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/01/Python_basics7/">展开全文 >></a>
         </p>
       
 
@@ -1182,69 +1249,6 @@ ls1[3][0] = <span class="string">'three'</span>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/07/12/Python_basics/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-new-day" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/11/new-day/">new day</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/11/new-day/" class="archive-article-date">
-  	<time datetime="2018-07-11T14:07:58.875Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>新的一天，新的开始，以后我会更加的努力，坚持就是胜利！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/11/new-day/">展开全文 >></a>
         </p>
       
 
